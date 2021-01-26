@@ -70,7 +70,7 @@ img{
     /* position: absolute; //포지션의 좌표값을 이용해 가운데 배치하는 방법
     /* top: 50%; // 포지션의 좌표값을 이용해 가운데 배치하는 방법
     /* left: 50%; //포지션의 좌표값을 이용해 가운데 배치하는 방법 */ 
-    position: relative;
+    position: relative; 
 
 }
 .view-image{
