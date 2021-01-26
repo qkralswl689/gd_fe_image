@@ -63,9 +63,9 @@
   line-height: 30px; /*버튼 높이랑 똑같이 해주면 가운데로 내려간다*/
   margin-right: 10px; /* input-text 박스랑 자리 맞추기위해서 적용했다*/
 }
-/* .result-element { // 안써서 주석처리
+.result-element { // 안써서 주석처리
 }
 .result-element span {
   margin-right: 10px;
   line-height: 34px;
-} */
+}
