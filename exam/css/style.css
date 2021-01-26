@@ -1,0 +1,71 @@
+* {
+  /* (*) -> 전체선택자 (css의 모든요소를 선택한다)*/
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  padding: 20px;
+  margin: 20px;
+  background: #33de9c;
+}
+.title {
+  font-weight: bold; /*글씨 굵게*/
+  margin-bottom: 20px;
+}
+.form-container {
+  display: flex; /* input 박스와 button 박스의 배치를 정확하게 구성 - 틀어져 보이는거 , float를 써도 된다 */
+}
+.input-text {
+  display: inline-block; /* 가로배치(inline)는 유지하면서 박스로 만들어준다*/
+  width: 100px;
+  height: 30px;
+  margin: 0 10px 0 0; /* 오른쪽 방향만 마진 적용 - magin-right랑은 다름 -> 위,아래,왼쪽을 0으로 맞추기위해 현재 적용한 방법으로 적용했다 / magin-right 는 위,아래,왼쪽이 0이아닌 auto로 적용된다*/
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 1px solid red;
+  background-color: transparent; /*배경을 투명하게 해준다 */
+  outline: none; /* 박스를 클릭했을 때 박스라인이 안보이게 해준다*/
+}
+.button {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid red;
+  background-color: transparent;
+  color: red;
+  cursor: pointer; /* 버튼 위에 커서를 올려놓으면 손가락 모양으로 바뀐다*/
+}
+.result-container {
+  margin-top: 20px;
+  display: flex; /* 어긋나 보이는 디스플레이 정리*/
+}
+.label {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 30px; /*버튼 높이랑 똑같이 해주면 가운데로 내려간다*/
+  margin-right: 10px; /* input-text 박스랑 자리 맞추기위해서 적용했다*/
+}
+.labe2 {
+  display: inline-block;
+  /*   width:100px; */
+  height: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 30px; /*버튼 높이랑 똑같이 해주면 가운데로 내려간다*/
+  margin-right: 10px; /* input-text 박스랑 자리 맞추기위해서 적용했다*/
+}
+/* .result-element { // 안써서 주석처리
+}
+.result-element span {
+  margin-right: 10px;
+  line-height: 34px;
+} */
