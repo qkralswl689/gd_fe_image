@@ -65,7 +65,7 @@ img{
     width: 300px;
     height: 200px;
     border: 1px solid red;
-    /* overflow: hidden; // 자신의 영역을 넘어가는 자식요소(view-image) 를 자신의 영역에 맞춰 자르는것 */
+    overflow: hidden; /*자신의 영역을 넘어가는 자식요소(view-image) 를 자신의 영역에 맞춰 자르는것*/
 
     /* position: absolute; //포지션의 좌표값을 이용해 가운데 배치하는 방법
     /* top: 50%; // 포지션의 좌표값을 이용해 가운데 배치하는 방법
@@ -79,4 +79,24 @@ img{
     position: absolute; /* 부모요소를 기준의로 위치 좌표 */
 }
 
-.
+.image2{ /*image2 모두를 300px 자리로 옮긴다 - 시작상태*/
+    left:300px;
+}
+.image2.index0{ /*index0만 0 자리로 보내줌*/
+    left:0;
+}
+.image2.current{
+    left:0;
+}
+
+.image2.out{ /* 사진이 나가는 동작*/
+    left: -300px;
+    transition: left 0.5s; /* 0.5초 동안 진행 => 애니메니션이 진행되는 시간*/
+}
+.image2.in{ /* 들어오는 동작*/
+    left: 0;
+    transition: left 0.5s; 
+}
+.image2.jump{ /*점프 하는 동작*/
+    left: 300px;
+}
