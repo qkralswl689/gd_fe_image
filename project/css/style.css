@@ -58,3 +58,95 @@ html, body{
     width: 100%; /* 안해줘도 부모요소 영역에 100% 채워지지만 명시해준것 */
     height: 100%;
 }
+.form-section{
+    position: absolute; /* 해당 구역 위치지정 (왼쪽 상단) */
+    top: 10px;
+    left: 15px;
+    z-index: 90; /* 화면의 맨 앞에 배치*/
+}
+.input-address-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.input-address{
+    width: 300px;
+    height: 36px;
+    box-sizing: border-box; /* width & height 값 안에 padding 및 margin 값 포함되게 설정*/
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5); /* 박스의 가로 세로  색*/
+    border-radius: 5px; /* 박스 모서리 둥글기 정도*/
+    
+}
+.button-search{
+    width: 26px;
+    height: 26px;
+    background: none;
+    border: 0;
+    padding: 0;;
+    position: absolute;
+    right: 5px; /* 돋보기 아이콘 위치 input박스로 넣어주기, width & height 값에서 줄여준 값의 반 - 원래는 30px * 30px => input박스 값 기준이였음 */
+    top:5px; /* width & height 값에서 줄여준 값의 반 => 가운데 위치시켜주기 위해 */
+}
+.button-search img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.button-weather,
+.button-position {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: #fff;
+
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+.button-weather{
+    left: 310px;
+    overflow: hidden;
+}
+.button-position{
+    left: 356px; 
+    background-image: url(../images/current_position_default.png); /* 배경이미지로 설정 */
+    background-position: center center; /* 이미지 가운데 배치 */
+    text-indent: -99999em; /* 텍스트가 안보이게 위치값을 - 엄청 크게 지정해서 텍스트가 화면 밖으로 나가게 지정한다*/
+    background-size: 28px 28px; /* 가로값 세로값 */ 
+    background-repeat: no-repeat; /* 백그라운드 반복 하지 않게 설정*/ 
+}
+
+.button-position.active{
+    background-image: url(../images/current_position_active.png);
+}
+
+@media screen and (max-width:460px){ /*모바일 화면 설정 - max width 모바일 화면 전환 픽셀 설정*/
+
+    .form-section{
+        width:calc(100% - 30px); /*양쪽에 15px 씩 공간을두려고 100%에서 30px을 뺌 => 공백 꼭 지켜야함 */
+    }
+
+    .input-address-container{
+        width: 100%; 
+    }
+
+    .input-address{
+        width: 100%;
+    }
+
+    .button-weather,
+    .button-position{
+        left: auto; /* 왼쪽 적용을 안한것과 같은 형태로 설정 */
+        right: 0; /* input과 라인을 맞춰주기위해*/
+    }
+
+    .button-weather{
+        top: 56px;
+    }
+
+    .button-position{
+        top: 102px;
+    }
+
+}
