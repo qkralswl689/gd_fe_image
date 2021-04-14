@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  
+    <style>
+        #section1 
+        { width: 1205x;
+          height: 400px;
+          
+        }
+       body{
+        background-color : white;
+        margin:0;
+        padding-left:0;
+        font-size:0.75em;
+    
+        }
+    
+        #box
+        { width: 50px;
+          height: 50px;
+          border-right : 2px solid #75736e;
+          border-top : 2px solid #75736e;
+          padding-left: 20px;
+          padding-right: 20px;
+          text-align: center;
+        }
+
+        #box2
+        { width: 1000px;
+          height: 50px;
+
+          border-top : 2px solid #75736e;
+         
+        }
+    
+        #table
+        { width: 700px;
+          height: 500px;
+         
+	    }
+
+        #bottom{
+            padding-top: 100px;
+            text-align: center;
+
+        }
+        #rightbox{
+              width: calc(50% - 5px );
+            
+	   box-sizing: border-box;
+        }
+
+
+       
+      </style>
+</head>
+    <body>
+        <section id="section1">
+            <form>
+            <table id="table">
+              
+                <tr>
+                    <td id="box" name="name">이름</td> 
+                    <td id="box2"><input type="text"> 한글로 10글자 이내로 입력해 주세요</td>
+                </tr>
+              
+                <tr id="box2">
+                     <td id="box" name="id">아이디</td>
+                        <td ><input type="text">
+                        <button type="button" name="id_btn">중복확인</button>영문 숫자를 조합하여 8~20자 이내로 입력(대소문자 구별 한글/특수문자 사용불가)</td>
+                        <td>아이디 중복 확인 결과 표기</td>
+                    </tr>  
+              
+                
+         
+                <tr id="box2">
+                   
+                    <td id="box" name="pw">비밀번호</td>
+                    <td ><input type="password"  placeholder="비밀번호 입력"></td>   
+                    <td name="pw2" id="pwbox" >비밀번호 확인</td>
+                    <td id="rightbox"><input type="password" placeholder="비밀번호 확인" >영문,숫자,특수문자를 조합하여 8~20자 이내로 입력</td>
+                </tr>
+
+
+                <tr id="box2">
+                    <td id="box">이메일</td>
+                    <td id="box2">
+                        <input type="text" style="width:80px;">@
+                        <input type="text" style="width:80px;">
+                    <td id="box2">
+                            <select>
+                                <option>직접입력</option>
+                                <option name="email1">naver.com</option>
+                                <option name="email2">hanmail.com</option>
+                                <option name="email3">gmail.com</option>
+                            </select>
+                        </td>
+                    </td>
+                </tr>
+            </section>
+                </table>
+            <div id = "bottom">
+                <button  type="button">회원 가입가입하기</button>
+                <button type="button">취소</button>
+            </div>
+        </form>
+
+    </body>
+
+</html>

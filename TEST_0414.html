@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <title>Test</title>
+ 
+ 
+  <style>
+ 
+ h, td, tr, input, textarea, select, FORM
+ {
+  font-size:1em;
+  
+ }
+ 
+ table, FORM
+ {
+  border:1px solid #75736e;
+  border-spacing:15px;
+ }
+
+ title{
+   border-bottom: 2px solid #75736e;
+   
+ }
+#bottom{
+  padding-left: 250px;
+  text-align: left;
+}
+   </style>
+
+</head>
+<body style="background-color:"white">>
+ <center>
+ <h1 id="title"> 자바 마켓 회원 가입 정보 입력</h1>
+ <table boder = "" bgcolor = "white" cellspacing = "1" >
+ <FORM>
+  <tr>
+
+    <tr>
+      <td id="name" > 이름</td>
+      <td> <input type="text"> 한글로 10글자 이내로 입력해 주세요</td> </td>
+     </tr>
+   
+   <td text-align="center" id="id,box">아이디 </td>
+   <td>
+   <input type = "text" />
+   <input type = "button" value = "중복확인"/>
+   &nbsp;영문 숫자를 조합하여 8~20자 이내로 입력(대소문자 구별 한글/특수문자 사용불가
+   </td>
+  </tr>
+    <tr id="pwbox">
+   <td id="pw"> 비밀번호 </td>
+   <td> <input type = "password"  placeholder="비밀번호 입력"/> </td>
+  </tr>
+
+  <tr>
+   <td id="pw2" > </td>
+   <td> <input type = "password" placeholder="비밀번호 확인"/>&nbsp;영문,숫자,특수문자를 조합하여 8~20자 이내로 입력</td>
+  </tr>
+
+  <tr>
+   <td> 이메일 </td>
+   <td>
+    <input type = "text"/> @ <input type = "text"/> &nbsp;&nbsp;
+    <select>
+     <option> 직접입력 </option>
+     <option id="email1"> naver.com </option>
+     <option id="email2"> gmial.com </option>
+     <option id="email3"> nate.com </option>
+    </select>
+   </td>
+  </tr>
+
+ </FORM>
+</table>
+<input type="checkbox"checked> 메일 수신(이벤트,신상품 등 고객님께 혜택이 되는 소식을 알려드립니다.)
+<div id="bottom">
+  <p>- 비회원도 상품을 구매할 수 있습니다</p>
+  <p>- 오픈마켓에서 자바 마켓을 검색하시면 제품을 구매할 수 있습니다</p>
+  <p>- 제품을 구매만 할 경우 회원 가입하세요</p>
+</div>
+<br/>
+<input type = "submit" value = "회원 가입가입하기"/>
+
+<input type = "reset" value = "취소"/>
+
+
+</center>
+</body>
+</html>

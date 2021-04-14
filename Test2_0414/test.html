@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>signin</title>
+</head>
+<body>
+
+	
+	<form>
+		<fieldset>
+			<table>
+				<tr>
+					<td><img src="./img/check.png" width="20" height="20"></td>
+					<td>사용자 ID</td>
+					<td><input type="text" placeholder="영문이름만사용">
+					<button type="button">중복확인</button>띄어쓰기 없는 영문소문자,숫자조합</td>
+				</tr>
+				
+				<tr>
+					<td><img src="./img/check.png" width="20" height="20"></td>
+					<td>비밀번호</td>
+					<td><input type="password">띄어쓰기 없는 영문소문자,숫자조합</td>
+				</tr>
+					
+				<tr>
+					<td><img src="./img/check.png" width="20" height="20"></td>
+					<td>비밀번호 확인</td>
+					<td><input type="password">비밀번호를 한번더 입력해주세요</td>
+				</tr>
+			</table>
+		</fieldset>
+		
+		<fieldset>
+			<legend>02 개인 정보</legend>
+			<table>
+				<tr>
+					<td><img src="./img/check.png" width="20" height="20"></td>
+					<td>이름</td>
+					<td><input type="text"></td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;</td>
+					<td>주민등록번호</td>
+					<td><input type="text">&nbsp;-&nbsp;<input type="password"></td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;</td>
+					<td>생년월일</td>
+					<td>
+						<input type="text" style="width:80px;">&nbsp;년&nbsp;
+						<input type="text" style="width:80px;">&nbsp;월&nbsp;
+						<input type="text" style="width:80px;">&nbsp;일&nbsp;
+						<input type="radio" name="birth">양력
+						<input type="radio" name="birth">음력
+					</td>
+				</tr>
+				
+				<tr>
+					<td><img src="./img/check.png" width="20" height="20"></td>
+					<td>연락처</td>
+					<td>
+						<select>
+							<option>==선택==</option>
+							<option>02</option>
+							<option>031</option>
+							<option>032</option>
+						</select>
+						-&nbsp;<input type="text" style="width:80px;">&nbsp;
+						-&nbsp;<input type="text" style="width:80px;">
+						<input type="radio" name="call">자택 
+						<input type="radio" name="call">직장
+					</td>
+				</tr>
+				
+				<tr>
+					<td><img src="./img/check.png" width="20" height="20"></td>
+					<td>휴대전화</td>
+					<td>
+						<input type="text" style="width:80px;">&nbsp;-&nbsp;
+						<input type="text" style="width:80px;">&nbsp;-&nbsp;
+						<input type="text" style="width:80px;">
+					</td>
+				</tr>
+				
+				<tr>
+					<td><img src="./img/check.png" width="20" height="20"></td>
+					<td>E-mail 주소</td>
+					<td><input type="text" placeholder="example@axample.com" style="width:300px;"></td>
+				</tr>
+				
+				<tr>
+					<td><img src="./img/check.png" width="20" height="20"></td>
+					<td>주소</td>
+					<td>
+						<input type="text" style="width:80px;">-
+						<input type="text" style="width:80px;">
+						<button type="button">우편번호찾기</button>
+						<input type="radio" name="address">자택 
+						<input type="radio" name="address">직장
+					</td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><input type="text" style="width:300px;"></td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><input type="text" style="width:300px;"></td>
+				</tr>
+			</table>
+		</fieldset>
+		
+		<fieldset>
+			<legend>03 기타정보</legend>
+			<table>
+				<tr>
+					<td>직업</td>
+					<td>
+						<select>
+							<option>===선택하세요===</option>
+							<option>학생</option>
+							<option>직장인</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>회사명(학교)</td>
+					<td>
+						<input type="text">
+						<button>찾기</button>
+						<input type="radio" name="find">자택 
+						<input type="radio" name="find">직장
+					</td>
+				</tr>
+				
+				<tr>
+					<td>사업자번호</td>
+					<td><input type="text"></td>
+				</tr>
+				
+				<tr>
+					<td>부서명(학과)</td>
+					<td><input type="text"></td>
+				</tr>
+				
+				<tr>
+					<td>직위(학년)</td>
+					<td><input type="text"></td>
+				</tr>
+				
+				<tr>
+					<td>관심분야</td>
+					<td>
+						<select>
+							<option>===선택하세요===</option>
+							<option>front-end</option>
+							<option>back-end</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>TP웹진 수신</td>
+					<td>
+						<input type="radio" name="reception">수신동의 
+						<input type="radio" name="reception">수신하지않음
+						(TP에서 제공하는 Webzine 서비스를 받아보시겠습니까?)
+				</tr>
+				
+				<tr>
+					<td>홈페이지 주소</td>
+					<td><input type="text" style="width:300px;"></td>
+				</tr>
+				
+				<tr>
+					<td>자기소개</td>
+					<td><textarea></textarea></td>
+				</tr>
+			</table>
+		</fieldset>
+		<br>
+		<fieldset>
+			<button type="button">가입</button>
+			<button type="button">취소</button>
+		</fieldset>
+	</form>
+</body>
+</html>
